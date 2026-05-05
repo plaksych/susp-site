@@ -1,802 +1,449 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suspiria - Official Site [ NU-METAL / КИБЕРЕМОКОР ]</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-  <!-- ====== HEADER ====== -->
-  <header class="site-header">
-    <h1 class="site-title glow">
-      <span class="blink">★</span> SUSPIRIA <span class="blink">★</span>
-    </h1>
-    <p class="site-subtitle"><i>NU-METAL // КИБЕРЕМОКОР // FROM LIPECK, RUSSIA</i></p>
-    <div class="header-divider">────────────────────────────────────────────────</div>
-  </header>
-
-  <!-- ====== MARQUEE ====== -->
-  <div class="marquee-box">
-    <div class="marquee-track">
-      <span>★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR SUMMER 2026 ★ LIPECK CYBER-EMOCORE ★ SUSPIRIA ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      <span aria-hidden="true">★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR SUMMER 2026 ★ LIPECK CYBER-EMOCORE ★ SUSPIRIA ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div>
-  </div>
-
-  <!-- ====== NAVIGATION ====== -->
-  <nav class="site-nav">
-    <a href="#about"       class="nav-button">[ HOME ]</a>
-    <a href="#members"     class="nav-button">[ MEMBERS ]</a>
-    <a href="#discography" class="nav-button">[ DISCOGRAPHY ]</a>
-    <a href="#tour"        class="nav-button">[ TOUR ]</a>
-    <a href="#contact"     class="nav-button">[ CONTACT ]</a>
-    <a href="#guestbook"   class="nav-button">[ GUESTBOOK ]</a>
-  </nav>
-
-  <!-- ====== SITE WRAPPER ====== -->
-  <div class="site-wrapper">
-
-    <!-- ====== SIDEBAR ====== -->
-    <aside class="sidebar">
-
-      <button class="play-btn" onclick="playMusic()">▶ PLAY MUSIC</button>
-      <audio id="player" loop>
-        <source src="sfx/suspiria_intro_loop.mp3" type="audio/mpeg" />
-        <source src="sfx/suspiria_intro_loop.mid" type="audio/midi" />
-      </audio>
-
-      <h3 class="sidebar-heading">MEMBERS</h3>
-      <span class="sidebar-divider">═════════════</span>
-
-      <div class="sidebar-members">
-        <div class="sidebar-member">
-          <img src="images/kazmin.jpg" alt="Григорий Казьмин" class="member-thumb" />
-          <strong class="member-name-sm">GRIGORIY</strong>
-          <span class="member-role-sm">VOCALS</span>
-        </div>
-        <div class="sidebar-member">
-          <img src="images/belozerov.jpg" alt="Илья Белозёров" class="member-thumb" />
-          <strong class="member-name-sm">ILYA</strong>
-          <span class="member-role-sm">LEAD GUITAR</span>
-        </div>
-        <div class="sidebar-member">
-          <img src="images/kovalev.jpg" alt="Кирилл Ковалёв" class="member-thumb" />
-          <strong class="member-name-sm">KIRILL</strong>
-          <span class="member-role-sm">RHYTHM GUITAR</span>
-        </div>
-        <div class="sidebar-member">
-          <img src="images/cheglov.jpg" alt="Всеволод Чеглов" class="member-thumb" />
-          <strong class="member-name-sm">VSEVOLOD</strong>
-          <span class="member-role-sm">DRUMS</span>
-        </div>
-        <div class="sidebar-member">
-          <img src="images/balalykin.JPG" alt="Максим Тайлунг Балалыкин" class="member-thumb" />
-          <strong class="member-name-sm">"TAILUNG"</strong>
-          <span class="member-role-sm">BASS</span>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suspiria - Official Site</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ====== HEADER ====== -->
+    <header class="site-header">
+      <h1 class="site-title glow">
+        <span class="blink">★</span> SUSPIRIA <span class="blink">★</span>
+      </h1>
+      <p class="site-subtitle">
+        <i>NU-METAL // КИБЕРЕМОКОР // FROM LIPECK, RUSSIA</i>
+      </p>
+      <div class="header-divider">
+        ────────────────────────────────────────────────
       </div>
+    </header>
 
-      <span class="sidebar-divider">═════════════</span>
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee-box">
+      <div class="marquee-track">
+        <span
+          >★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR
+          SUMMER 2026 ★ LIPECK CYBER-EMOCORE ★ SUSPIRIA ★
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span aria-hidden="true"
+          >★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR
+          SUMMER 2026 ★ LIPECK CYBER-EMOCORE ★ SUSPIRIA ★
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+    </div>
 
-      <h3 class="sidebar-heading">STATUS</h3>
-      <ul class="status-list">
-        <li><span class="status-online">●</span> Online</li>
-        <li><span class="status-warn">◘</span> Working on new album</li>
-        <li><span class="status-danger">◙</span> Tour 2026 coming</li>
-      </ul>
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="site-nav">
+      <a href="#about" class="nav-button">[ HOME ]</a>
+      <a href="#members" class="nav-button">[ MEMBERS ]</a>
+      <a href="#discography" class="nav-button">[ DISCOGRAPHY ]</a>
+      <a href="#tour" class="nav-button">[ TOUR ]</a>
+      <a href="#contact" class="nav-button">[ CONTACT ]</a>
+      <a href="#guestbook" class="nav-button">[ GUESTBOOK ]</a>
+    </nav>
 
-      <span class="sidebar-divider">═════════════</span>
+    <!-- ====== SITE WRAPPER ====== -->
+    <div class="site-wrapper">
+      <!-- ====== SIDEBAR ====== -->
+      <aside class="sidebar">
+        <button id="play-btn" class="play-btn" onclick="toggleMusic()">
+          ▶ PLAY MUSIC
+        </button>
+        <audio id="player" loop>
+          <source src="assets/sfx/suspiria_intro_loop.mp3" type="audio/mpeg" />
+        </audio>
 
-      <h3 class="sidebar-heading">LINKS</h3>
-      <ul class="links-list">
-        <li><span class="arrow">▸</span> <a href="#">VKontakte</a></li>
-        <li><span class="arrow">▸</span> <a href="#">YouTube</a></li>
-        <li><span class="arrow">▸</span> <a href="#">SoundCloud</a></li>
-        <li><span class="arrow">▸</span> <a href="#">Myspace</a></li>
-        <li><span class="arrow">▸</span> <a href="#">Last.fm</a></li>
-      </ul>
+        <span class="sidebar-divider">═════════════</span>
 
-      <span class="sidebar-divider">═════════════</span>
+        <img
+          src="assets/gif/emo-taylor-swift.gif"
+          alt="emo taylor swift"
+          class="sidebar-gif"
+        />
 
-      <p class="best-viewed">Best viewed in<br />Internet Explorer 6.0<br />800x600 resolution</p>
+        <span class="sidebar-divider">═════════════</span>
 
-    </aside>
-
-    <!-- ====== MAIN CONTENT ====== -->
-    <main class="main-content">
-      <!-- ====== ABOUT ====== -->
-      <section id="about">
-        <h2 class="section-header">★ ABOUT THE BAND ★</h2>
-        <div class="about-block">
-          <p class="about-title"><b>★ <span class="neon-red">SUSPIRIA</span> ★</b></p>
-          <figure class="band-photo">
-            <img src="images/group.JPG" alt="Suspiria - Official Band Photo" class="group-photo" />
-            <figcaption class="photo-caption"><i>Official Photo 2025</i></figcaption>
-          </figure>
-          <p class="about-text">
-            <b>Suspiria</b> — ню-метал/киберэмокор-группа из города <span class="neon-red">Липецк</span>, Россия.
-            Группа образовалась в результате страсти к тяжёлой музыке и желанию создать нечто мощное, эмоциональное и цифровое одновременно.
+        <div class="ad-block">
+          <p class="ad-label">[ РЕКЛАМА ]</p>
+          <p class="ad-text">
+            МЕСТО ДЛЯ<br />ВАШЕЙ РЕКЛАМЫ<br /><span class="neon-green"
+              >ЗВОНИ СЕЙЧАС</span
+            >
           </p>
-          <p class="about-text about-text--dim">
-            Звучание Suspiria сочетает в себе грув ню-метала 2000-х, мелодичность киберэмокора и современную тяжёлую эстетику.
-            Каждый трек — это взрыв энергии, каждое выступление — это хаос и мощь.
-          </p>
-          <p class="about-text about-text--faded">
-            <i>«Мы не играем музыку чтобы нравиться всем. Мы играем чтобы чувствовать.»</i>
-          </p>
+          <p class="ad-phone">8-800-SUSPIRIA</p>
         </div>
-      </section>
 
-      <p class="section-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+        <span class="sidebar-divider">═════════════</span>
 
-          <!-- ====== MEMBERS ====== -->
-          <a name="members"></a>
-          <div class="section-header">★ MEMBERS ★</div>
+        <div class="ad-block ad-block--broken">
+          <p class="ad-label">[ СПОНСОР ]</p>
+          <p class="ad-text">ТУТ МОГЛА БЫТЬ<br />ВАША ГРУППА</p>
+          <p class="ad-subtext">но вы не позвонили :(</p>
+        </div>
 
-          <table width="100%" cellpadding="5" cellspacing="3" border="0">
-            <tr bgcolor="#111111">
-              <td width="120" class="member-cell" align="center">
+        <span class="sidebar-divider">═════════════</span>
+
+        <h3 class="sidebar-heading">STATUS</h3>
+        <ul class="status-list">
+          <li><span class="status-online">●</span> Online</li>
+          <li><span class="status-warn">◘</span> Working on new album</li>
+          <li><span class="status-danger">◙</span> Tour 2026 coming</li>
+        </ul>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <h3 class="sidebar-heading">LINKS</h3>
+        <ul class="links-list">
+          <li>
+            <span class="arrow">▸</span>
+            <a href="https://vk.com/suspiriaband">VKontakte</a>
+          </li>
+          <li>
+            <span class="arrow">▸</span>
+            <a href="https://t.me/suspiriaband">Telegram</a>
+          </li>
+          <li>
+            <span class="arrow">▸</span>
+            <a href="https://band.link/JfDzb">Band.Link</a>
+          </li>
+          <li>
+            <span class="arrow">▸</span>
+            <a href="https://www.youtube.com/watch?v=8czopJri4lU">YouTube</a>
+          </li>
+        </ul>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <p class="best-viewed">Best viewed in<br />Internet Explorer 6.0</p>
+      </aside>
+
+      <!-- ====== MAIN CONTENT ====== -->
+      <main class="main-content">
+        <!-- ====== ABOUT ====== -->
+        <section id="about">
+          <h2 class="section-header">★ ABOUT THE BAND ★</h2>
+          <div class="about-block">
+            <figure class="band-photo">
+              <img
+                src="assets/images/group.JPG"
+                alt="Suspiria - Official Band Photo"
+                class="group-photo"
+              />
+              <figcaption class="photo-caption">
+                <i>Official Photo 2025</i>
+              </figcaption>
+            </figure>
+            <p class="about-text">
+              <b>Suspiria</b> — ню-метал/киберэмокор-группа из города
+              <span class="neon-red">Липецк</span>, Россия. Группа образовалась
+              в результате страсти к тяжёлой музыке и желанию создать нечто
+              мощное, эмоциональное и цифровое одновременно.
+            </p>
+            <p class="about-text about-text--dim">
+              Звучание Suspiria сочетает в себе грув ню-метала 2000-х,
+              мелодичность киберэмокора и современную тяжёлую эстетику. Каждый
+              трек — это взрыв энергии, каждое выступление — это хаос и мощь.
+            </p>
+            <p class="about-text about-text--faded">
+              <i
+                >«Мы не играем музыку чтобы нравиться всем. Мы играем чтобы
+                чувствовать.»</i
+              >
+            </p>
+          </div>
+        </section>
+
+        <p class="section-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+
+        <!-- ====== MEMBERS ====== -->
+        <section id="members">
+          <h2 class="section-header">★ MEMBERS ★</h2>
+          <div class="members-list">
+            <article class="member-card">
+              <div class="member-photo-wrap">
                 <img
-                  src="images/kazmin.jpg"
+                  src="assets/images/kazmin.jpg"
                   alt="Григорий Казьмин"
-                  width="100"
-                  height="100"
-                  style="border: 1px solid #ff0000; background: #1a0000"
+                  class="member-photo"
                 />
-                <br /><br />
-              </td>
-              <td>
-                <font face="Verdana" size="11" color="#ff6600"
-                  ><b>Григорий Казьмин</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#999999"
-                  >VOCALS / ВОКАЛ</font
-                >
-                <br /><br />
-                <font face="Verdana" size="9" color="#666666">
+              </div>
+              <div class="member-info">
+                <p class="member-name">Григорий Казьмин</p>
+                <p class="member-role">VOCALS / ВОКАЛ</p>
+                <p class="member-bio">
                   Основной вокалист группы. Глубокий гроулинг и чистый вокал
                   создают атмосферу напряжения и силы.
-                </font>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#0a0a0a">
-                <font face="Verdana" size="1" color="#333333">&nbsp;</font>
-              </td>
-            </tr>
-            <tr bgcolor="#111111">
-              <td class="member-cell" align="center">
+                </p>
+              </div>
+            </article>
+            <article class="member-card">
+              <div class="member-photo-wrap">
                 <img
-                  src="images/belozerov.jpg"
+                  src="assets/images/belozerov.jpg"
                   alt="Илья Белозёров"
-                  width="100"
-                  height="100"
-                  style="border: 1px solid #ff0000; background: #1a0000"
+                  class="member-photo"
                 />
-                <br /><br />
-              </td>
-              <td>
-                <font face="Verdana" size="11" color="#ff6600"
-                  ><b>Илья Белозёров</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#999999"
-                  >LEAD GUITAR / ЛИД-ГИТАРА</font
-                >
-                <br /><br />
-                <font face="Verdana" size="9" color="#666666">
+              </div>
+              <div class="member-info">
+                <p class="member-name">Илья Белозёров</p>
+                <p class="member-role">LEAD GUITAR / ЛИД-ГИТАРА</p>
+                <p class="member-bio">
                   Лидер-гитарист. Огненные сольные партии и техничные риффы —
                   визитная карточка звучания Suspiria.
-                </font>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#0a0a0a">
-                <font face="Verdana" size="1" color="#333333">&nbsp;</font>
-              </td>
-            </tr>
-            <tr bgcolor="#111111">
-              <td class="member-cell" align="center">
+                </p>
+              </div>
+            </article>
+            <article class="member-card">
+              <div class="member-photo-wrap">
                 <img
-                  src="images/kovalev.jpg"
+                  src="assets/images/kovalev.jpg"
                   alt="Кирилл Ковалёв"
-                  width="100"
-                  height="100"
-                  style="border: 1px solid #ff0000; background: #1a0000"
+                  class="member-photo"
                 />
-                <br /><br />
-              </td>
-              <td>
-                <font face="Verdana" size="11" color="#ff6600"
-                  ><b>Кирилл Ковалёв</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#999999"
-                  >RHYTHM GUITAR / РИТМ-ГИТАРА</font
-                >
-                <br /><br />
-                <font face="Verdana" size="9" color="#666666">
+              </div>
+              <div class="member-info">
+                <p class="member-name">Кирилл Ковалёв</p>
+                <p class="member-role">RHYTHM GUITAR / РИТМ-ГИТАРА</p>
+                <p class="member-bio">
                   Ритм-гитарист. Массированные риффы и грув-секции формируют
                   основу тяжёлого звучания.
-                </font>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#0a0a0a">
-                <font face="Verdana" size="1" color="#333333">&nbsp;</font>
-              </td>
-            </tr>
-            <tr bgcolor="#111111">
-              <td class="member-cell" align="center">
+                </p>
+              </div>
+            </article>
+            <article class="member-card">
+              <div class="member-photo-wrap">
                 <img
-                  src="images/cheglov.jpg"
+                  src="assets/images/cheglov.jpg"
                   alt="Всеволод Чеглов"
-                  width="100"
-                  height="100"
-                  style="border: 1px solid #ff0000; background: #1a0000"
+                  class="member-photo"
                 />
-                <br /><br />
-              </td>
-              <td>
-                <font face="Verdana" size="11" color="#ff6600"
-                  ><b>Всеволод Чеглов</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#999999"
-                  >DRUMS / УДАРНЫЕ</font
-                >
-                <br /><br />
-                <font face="Verdana" size="9" color="#666666">
+              </div>
+              <div class="member-info">
+                <p class="member-name">Всеволод Чеглов</p>
+                <p class="member-role">DRUMS / УДАРНЫЕ</p>
+                <p class="member-bio">
                   Ударник. Взрывная техника и мощная ритм-секция. Каждый
                   барабанный соло — это стихия.
-                </font>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#0a0a0a">
-                <font face="Verdana" size="1" color="#333333">&nbsp;</font>
-              </td>
-            </tr>
-            <tr bgcolor="#111111">
-              <td class="member-cell" align="center">
+                </p>
+              </div>
+            </article>
+            <article class="member-card">
+              <div class="member-photo-wrap">
                 <img
-                  src="images/balalykin.JPG"
+                  src="assets/images/balalykin.JPG"
                   alt="Максим Тайлунг Балалыкин"
-                  width="100"
-                  height="100"
-                  style="border: 1px solid #ff0000; background: #1a0000"
+                  class="member-photo"
                 />
-                <br /><br />
-              </td>
-              <td>
-                <font face="Verdana" size="11" color="#ff6600"
-                  ><b>Максим "Тайлунг" Балалыкин</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#999999"
-                  >BASS / БАС-ГИТАРА</font
-                >
-                <br /><br />
-                <font face="Verdana" size="9" color="#666666">
+              </div>
+              <div class="member-info">
+                <p class="member-name">Максим "Тайлунг" Балалыкин</p>
+                <p class="member-role">BASS / БАС-ГИТАРА</p>
+                <p class="member-bio">
                   Басист. Никто не знает почему его зовут "Тайлунг", но он
                   гордится этим прозвищем. Его басовые линии — это отдельная
                   форма искусства.
-                </font>
-              </td>
-            </tr>
-          </table>
-
-          <center>
-            <font color="#330000">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</font>
-          </center>
-          <br />
-
-          <!-- ====== DISCOGRAPHY ====== -->
-          <a name="discography"></a>
-          <div class="section-header">★ DISCOGRAPHY ★</div>
-
-          <table width="100%" cellpadding="10" cellspacing="0" border="0">
-            <tr>
-              <td width="220" valign="top">
-                <div class="album-art">
-                    <img src="images/ep_cover.jpg" alt="Cover Art" width="200" />
-                  </div>
-                </div>
-                <br />
-                <center>
-                  <font face="Verdana" size="9" color="#ff0000"
-                    ><b>EP:00(1)</b></font
-                  ><br />
-                  <font face="Verdana" size="9" color="#666666"
-                    >DEMO / RELEASE</font
-                  >
-                </center>
-              </td>
-              <td valign="top">
-                <font face="Verdana" size="11" color="#ffffff"
-                  ><b>★ EP:00(1)</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#ff0000">[ EP ]</font>
-                <br /><br />
-
-                <table width="100%" cellpadding="3" cellspacing="0" border="0">
-                  <tr bgcolor="#0d0000">
-                    <td width="30">
-                      <font face="Verdana" size="9" color="#ff0000">01.</font>
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Вр3мЯ ОжиданиЙ</font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#0d0000">
-                    <td>
-                      <font face="Verdana" size="9" color="#ff0000">02.</font>
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >П.П.П.</font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#0d0000">
-                    <td>
-                      <font face="Verdana" size="9" color="#ff0000">03.</font>
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Последней каплей</font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#0d0000">
-                    <td>
-                      <font face="Verdana" size="9" color="#ff0000">04.</font>
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Сепия</font
-                      >
-                    </td>
-                  </tr>
-                </table>
-
-                <br />
-                <font face="Verdana" size="10" color="#666666">
-                  <i
-                    >Первый релиз группы. EP:00(1) — это начало пути. Только
-                    начало. Больше будет.</i
-                  >
-                </font>
-
-                <br /><br />
-
-                <font face="Verdana" size="11" color="#ff6600"
-                  ><b>★СКОРО:</br>
-                    ПЕРВЫЙ АЛЬБОМ</b></font
-                ><br />
-                <font face="Verdana" size="10" color="#999999">
-                  Запись первого полноформатного альбома идёт полным ходом.
-                  Следите за обновлениями!
-                </font>
-              </td>
-            </tr>
-          </table>
-
-          <center>
-            <font color="#330000">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</font>
-          </center>
-          <br />
-
-          <!-- ====== TOUR ====== -->
-          <a name="tour"></a>
-          <div class="section-header">★ CONCERT TOUR 2026 ★</div>
-
-          <table width="100%" cellpadding="10" cellspacing="0" border="0">
-            <tr>
-              <td>
-                <font face="Verdana" size="11" color="#ff0000">
-                  <b>★ ЛЕТНИЙ ТУР 2026 ★</b>
-                </font>
-                <br /><br />
-
-                <font face="Verdana" size="10" color="#cccccc">
-                  Группа планирует активную концертную деятельность летом 2026
-                  года. Мы готовимся к масштабному туру по России и странам СНГ.
-                  Следите за анонсами!
-                </font>
-
-                <br /><br />
-
-                <table width="100%" cellpadding="3" cellspacing="2" border="0">
-                  <tr>
-                    <td class="tour-date" width="100">
-                      <font face="Verdana" size="10" color="#ff0000"
-                        ><b>ИЮНЬ 2026</b></font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Липецк — <b>Точка анонса</b></font
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tour-date" width="100">
-                      <font face="Verdana" size="10" color="#ff0000"
-                        ><b>ИЮНЬ 2026</b></font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Екатеринбург — <b>Точка анонса</b></font
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tour-date" width="100">
-                      <font face="Verdana" size="10" color="#ff0000"
-                        ><b>ИЮЛЬ 2026</b></font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Москва — <b>Точка анонса</b></font
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tour-date" width="100">
-                      <font face="Verdana" size="10" color="#ff0000"
-                        ><b>ИЮЛЬ 2026</b></font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Санкт-Петербург — <b>Точка анонса</b></font
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tour-date" width="100">
-                      <font face="Verdana" size="10" color="#ff0000"
-                        ><b>АВГУСТ 2026</b></font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Казань — <b>Точка анонса</b></font
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tour-date" width="100">
-                      <font face="Verdana" size="10" color="#ff0000"
-                        ><b>АВГУСТ 2026</b></font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Нижний Новгород — <b>Точка анонса</b></font
-                      >
-                    </td>
-                  </tr>
-                </table>
-
-                <br />
-                <font face="Verdana" size="10" color="#ff6600" class="blink">
-                  ★ БОЛЬШЕ ДАТ СКОРО ★ ВСЕ ДАТЫ БУДУТ ОБЪЯВЛЕНЫ ПОЗЖЕ ★
-                </font>
-              </td>
-            </tr>
-          </table>
-
-          <center>
-            <font color="#330000">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</font>
-          </center>
-          <br />
-
-          <!-- ====== GUESTBOOK ====== -->
-          <a name="guestbook"></a>
-          <div class="section-header">★ GUESTBOOK / ОСТАВЬ СООБЩЕНИЕ ★</div>
-
-          <table
-            width="100%"
-            cellpadding="10"
-            cellspacing="0"
-            border="0"
-            bgcolor="#0d0000"
-          >
-            <tr>
-              <td>
-                <form>
-                  <font face="Verdana" size="10" color="#cccccc">
-                    <b>Имя:</b>
-                    <input
-                      type="text"
-                      size="30"
-                      style="
-                        background-color: #1a0000;
-                        border: 1px solid #ff0000;
-                        color: #ff0000;
-                        font-family: Verdana;
-                        font-size: 10px;
-                      "
-                    /><br /><br />
-                    <b>Email:</b>
-                    <input
-                      type="text"
-                      size="30"
-                      style="
-                        background-color: #1a0000;
-                        border: 1px solid #ff0000;
-                        color: #ff0000;
-                        font-family: Verdana;
-                        font-size: 10px;
-                      "
-                    /><br /><br />
-                    <b>Сообщение:</b><br />
-                    <textarea
-                      rows="5"
-                      cols="50"
-                      style="
-                        background-color: #1a0000;
-                        border: 1px solid #ff0000;
-                        color: #cccccc;
-                        font-family: Verdana;
-                        font-size: 10px;
-                      "
-                    ></textarea
-                    ><br /><br />
-                    <input
-                      type="submit"
-                      value="  POST  "
-                      style="
-                        background-color: #1a0000;
-                        border: 2px outset #ff0000;
-                        color: #ff0000;
-                        font-family: Verdana;
-                        font-size: 10px;
-                        font-weight: bold;
-                        cursor: pointer;
-                      "
-                    />
-                  </font>
-                </form>
-              </td>
-            </tr>
-          </table>
-
-          <center>
-            <font color="#330000">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</font>
-          </center>
-          <br />
-
-          <!-- ====== CONTACT ====== -->
-          <a name="contact"></a>
-          <div class="section-header">★ CONTACT / СВЯЗАТЬСЯ С НАМИ ★</div>
-
-          <table width="100%" cellpadding="10" cellspacing="0" border="0">
-            <tr>
-              <td>
-                <table width="100%" cellpadding="3" cellspacing="0" border="0">
-                  <tr bgcolor="#111111">
-                    <td width="150">
-                      <font face="Verdana" size="10" color="#ff6600"
-                        >Email:</font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >suspiria@yandex.ru</font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#0d0000">
-                    <td>
-                      <font face="Verdana" size="10" color="#ff6600"
-                        >VKontakte:</font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        ><a href="#">vk.com/suspiria</a></font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#111111">
-                    <td>
-                      <font face="Verdana" size="10" color="#ff6600"
-                        >YouTube:</font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        ><a href="#">youtube.com/suspiria</a></font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#0d0000">
-                    <td>
-                      <font face="Verdana" size="10" color="#ff6600"
-                        >Город:</font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Липецк, Россия</font
-                      >
-                    </td>
-                  </tr>
-                  <tr bgcolor="#111111">
-                    <td>
-                      <font face="Verdana" size="10" color="#ff6600"
-                        >Жанр:</font
-                      >
-                    </td>
-                    <td>
-                      <font face="Verdana" size="10" color="#cccccc"
-                        >Nu-Metal / Киберэмокор</font
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-          <br />
-
-          <!-- ====== QUOTE BOX ====== -->
-          <div class="quote-box">
-            <center>
-              <font face="Verdana" size="10" color="#ff0000">
-                <i>"LIPETSK CAN'T HOLD US. WE ARE COMING FOR YOU."</i>
-              </font>
-              <br />
-              <font face="Verdana" size="8" color="#666666">
-                — GRIGORIY KAZMIN
-              </font>
-            </center>
+                </p>
+              </div>
+            </article>
           </div>
+        </section>
 
-          <br />
+        <p class="section-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
 
-          <!-- ====== TOP BANNER / BANNERS ====== -->
-          <center>
-            <table cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td>
-                  <table
-                    cellpadding="3"
-                    cellspacing="0"
-                    border="1"
-                    bordercolor="#ff0000"
-                    bgcolor="#000000"
-                    style="margin: 3px"
-                  >
-                    <tr>
-                      <td>
-                        <font face="Verdana" size="8" color="#ff0000"
-                          ><b>NU-METAL</b></font
-                        >
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <table
-                    cellpadding="3"
-                    cellspacing="0"
-                    border="1"
-                    bordercolor="#ff0000"
-                    bgcolor="#000000"
-                    style="margin: 3px"
-                  >
-                    <tr>
-                      <td>
-                        <font face="Verdana" size="8" color="#ff0000"
-                          ><b>КИБЕРЕМОКОР</b></font
-                        >
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <table
-                    cellpadding="3"
-                    cellspacing="0"
-                    border="1"
-                    bordercolor="#ff0000"
-                    bgcolor="#000000"
-                    style="margin: 3px"
-                  >
-                    <tr>
-                      <td>
-                        <font face="Verdana" size="8" color="#ff0000"
-                          ><b>LIPETSK</b></font
-                        >
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <table
-                    cellpadding="3"
-                    cellspacing="0"
-                    border="1"
-                    bordercolor="#ff0000"
-                    bgcolor="#000000"
-                    style="margin: 3px"
-                  >
-                    <tr>
-                      <td>
-                        <font face="Verdana" size="8" color="#ff0000"
-                          ><b>Russia</b></font
-                        >
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </center>
+        <!-- ====== DISCOGRAPHY ====== -->
+        <section id="discography">
+          <h2 class="section-header">★ DISCOGRAPHY ★</h2>
+          <div class="discography-block">
+            <div class="album-sidebar">
+              <div class="album-art">
+                <img src="assets/images/ep_cover.jpg" alt="Cover Art" />
+              </div>
+              <p class="album-title"><b>EP:00(1)</b></p>
+              <p class="album-type">DEMO / RELEASE</p>
+            </div>
+            <div class="album-details">
+              <p class="album-heading"><b>★ EP:00(1)</b></p>
+              <p class="album-label">[ EP ]</p>
+              <ol class="track-list">
+                <li>Вр3мЯ ОжиданиЙ</li>
+                <li>П.П.П.</li>
+                <li>Последней каплей</li>
+                <li>Сепия</li>
+              </ol>
+              <p class="album-desc">
+                <i
+                  >Первый релиз группы. EP:00(1) — это начало пути. Только
+                  начало. Больше будет.</i
+                >
+              </p>
+              <p class="album-announce">
+                <b>★СКОРО:<br />ПЕРВЫЙ АЛЬБОМ</b>
+              </p>
+              <p class="album-announce-sub">
+                Запись первого полноформатного альбома идёт полным ходом.
+                Следите за обновлениями!
+              </p>
+            </div>
+          </div>
+        </section>
 
-          <br />
-        </td>
-      </tr>
-    </table>
+        <p class="section-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+
+        <!-- ====== TOUR ====== -->
+        <section id="tour">
+          <h2 class="section-header">★ CONCERTS 2026 ★</h2>
+          <div class="tour-block">
+            <p class="tour-heading"><b>★ Концерты 2026 ★</b></p>
+            <p class="tour-text">
+              Группа планирует активную концертную деятельность летом 2026 года.
+              Следите за анонсами!
+            </p>
+            <div class="tour-dates">
+              <div class="tour-date">
+                <span class="tour-month">17.05.2026</span>
+                <span>Липецк — <b>Underground ул.Белянского с.7</b></span>
+              </div>
+              <!-- <div class="tour-date"><span class="tour-month">ИЮНЬ 2026</span>   <span>Екатеринбург — <b>Точка анонса</b></span></div>
+            <div class="tour-date"><span class="tour-month">ИЮЛЬ 2026</span>   <span>Москва — <b>Точка анонса</b></span></div>
+            <div class="tour-date"><span class="tour-month">ИЮЛЬ 2026</span>   <span>Санкт-Петербург — <b>Точка анонса</b></span></div>
+            <div class="tour-date"><span class="tour-month">АВГУСТ 2026</span> <span>Казань — <b>Точка анонса</b></span></div>
+            <div class="tour-date"><span class="tour-month">АВГУСТ 2026</span> <span>Нижний Новгород — <b>Точка анонса</b></span></div> -->
+            </div>
+            <p class="tour-announce blink">
+              ★ БОЛЬШЕ ДАТ СКОРО ★ ВСЕ ДАТЫ БУДУТ ОБЪЯВЛЕНЫ ПОЗЖЕ ★
+            </p>
+          </div>
+        </section>
+
+        <p class="section-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+
+        <!-- ====== GUESTBOOK ====== -->
+        <section id="guestbook">
+          <h2 class="section-header">★ GUESTBOOK / ОСТАВЬ СООБЩЕНИЕ ★</h2>
+          <div class="guestbook-block">
+            <form
+              id="guestbook-form"
+              class="guestbook-form"
+              action="https://formspree.io/f/mojrwqle"
+              method="POST"
+            >
+              <label class="gb-label">
+                <b>Имя:</b>
+                <input type="text" name="name" class="gb-input" />
+              </label>
+
+              <label class="gb-label">
+                <b>Email:</b>
+                <input type="email" name="email" class="gb-input" />
+              </label>
+
+              <label class="gb-label">
+                <b>Сообщение:</b>
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="gb-textarea"
+                ></textarea>
+              </label>
+
+              <input
+                type="hidden"
+                name="_subject"
+                value="Новое сообщение с сайта группы!"
+              />
+
+              <button type="submit" class="gb-submit">POST</button>
+            </form>
+            <div id="form-status"></div>
+          </div>
+        </section>
+
+        <p class="section-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+
+        <!-- ====== CONTACT ====== -->
+        <section id="contact">
+          <h2 class="section-header">★ CONTACT / СВЯЗАТЬСЯ С НАМИ ★</h2>
+          <div class="contact-block">
+            <dl class="contact-list">
+              <div class="contact-row contact-row--dark">
+                <dt>Email:</dt>
+                <dd>suspiria@yandex.ru</dd>
+              </div>
+              <div class="contact-row">
+                <dt>VKontakte:</dt>
+                <dd>
+                  <a href="https://vk.com/suspiriaband">vk.com/suspiria</a>
+                </dd>
+              </div>
+              <div class="contact-row contact-row--dark">
+                <dt>YouTube:</dt>
+                <dd>
+                  <a href="https://www.youtube.com/watch?v=8czopJri4lU"
+                    >youtube.com/suspiria</a
+                  >
+                </dd>
+              </div>
+              <div class="contact-row">
+                <dt>Город:</dt>
+                <dd>Липецк, Россия</dd>
+              </div>
+              <div class="contact-row contact-row--dark">
+                <dt>Жанр:</dt>
+                <dd>Nu-Metal / Киберэмокор</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <!-- ====== QUOTE ====== -->
+        <blockquote class="quote-box">
+          <p><i>"LIPETSK CAN'T HOLD US. WE ARE COMING FOR YOU."</i></p>
+          <footer>— GRIGORIY KAZMIN</footer>
+        </blockquote>
+
+        <!-- ====== BANNERS ====== -->
+        <div class="banners">
+          <span class="banner-tag">NU-METAL</span>
+          <span class="banner-tag">КИБЕРЕМОКОР</span>
+          <span class="banner-tag">LIPETSK</span>
+          <span class="banner-tag">Russia</span>
+          <span class="banner-tag">Russia</span>
+          <span class="banner-tag">Russia</span>
+        </div>
+      </main>
+    </div>
 
     <!-- ====== FOOTER ====== -->
-    <table width="900" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td
-          align="center"
-          bgcolor="#0d0000"
-          style="padding: 15px; border-top: 2px solid #330000"
+    <footer class="site-footer">
+      <p class="footer-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+      <p class="footer-copy">
+        © 2025 <b class="neon-red">SUSPIRIA</b>. All Rights Reserved.
+      </p>
+      <p class="footer-city">LIPECK, RUSSIA</p>
+      <p class="footer-counter-label"><b>Счётчик посещений:</b></p>
+      <span class="counter-box">000000<span class="blink">4</span>2</span>
+      <p class="footer-note">
+        <i>Created with Notepad. Best viewed in 800x600.</i><br />
+        <i
+          >This page is best viewed with JavaScript disabled and a sound
+          card.</i
         >
-          <font face="Verdana" size="9" color="#660000">
-            ▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█
-          </font>
-          <br /><br />
-
-          <font face="Verdana" size="9" color="#999999">
-            © 2025 <b style="color: #ff0000">SUSPIRIA</b>. All Rights Reserved.
-          </font>
-          <br />
-          <font face="Verdana" size="8" color="#666666"> LIPECK, RUSSIA </font>
-          <br /><br />
-
-          <font face="Verdana" size="9" color="#444444">
-            <b>Счётчик посещений:</b>
-          </font>
-          <span class="counter-box"> 000000<span class="blink">4</span>2 </span>
-          <br /><br />
-
-          <font face="Verdana" size="8" color="#333333">
-            <i>Created with Notepad. Best viewed in 800x600.</i>
-            <br />
-            <i
-              >This page is best viewed with JavaScript disabled and a sound
-              card.</i
-            >
-          </font>
-          <br /><br />
-
-          <font face="Verdana" size="8" color="#222222">
-            No animals were harmed during the making of this website. Except
-            maybe the guitarist's fingers.
-          </font>
-          <br /><br />
-
-          <font face="Impact" size="14" color="#330000"> ★ SUSPIRIA ★ </font>
-        </td>
-      </tr>
-    </table>
-
-    <!-- ====== ANIMATED DIVIDER AT BOTTOM ====== -->
-    <div align="center">
-      <font face="Courier New" size="1" color="#1a0000">
+      </p>
+      <p class="footer-joke">
+        No animals were harmed during the making of this website. Except maybe
+        the guitarist's fingers.
+      </p>
+      <p class="footer-logo">★ SUSPIRIA ★</p>
+      <p class="footer-bottom">
         ▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█
-      </font>
-    </div>
+      </p>
+    </footer>
+
+    <script src="js/player.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
