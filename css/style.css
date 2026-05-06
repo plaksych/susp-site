@@ -425,6 +425,10 @@ a:active  { color: #ff0000; }
 .tour-month { color: #ff0000; font-weight: bold; font-size: 13px; min-width: 95px; flex-shrink: 0; }
 .tour-announce { color: #ff6600; font-size: 13px; }
 
+.event-link         { color: #00ff00; text-decoration: underline dotted; text-shadow: 0 0 5px #00ff00; }
+.event-link:visited { color: #00cc00; }
+.event-link:hover   { color: #ffffff; text-shadow: 0 0 8px #00ff00, 0 0 16px #00ff00; text-decoration: underline; }
+
 /* ===== GUESTBOOK ===== */
 .guestbook-block { background-color: #0d0000; padding: 10px; }
 
