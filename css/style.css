@@ -488,22 +488,45 @@ a:active  { color: #ff0000; }
   .sidebar-toggle {
     display: block;
     width: 100%;
-    background-color: #1a0000;
+    background-color: #001a00;
     border: none;
-    border-top: 2px solid #ff0000;
-    border-bottom: 2px solid #ff0000;
-    color: #ff0000;
-    font-family: Verdana, sans-serif;
+    border-top: 2px solid #00ff00;
+    border-bottom: 2px solid #00ff00;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
     font-size: 14px;
     font-weight: bold;
-    padding: 7px 10px;
+    padding: 8px 12px;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
+    text-shadow: 0 0 6px #00ff00;
+    box-shadow: 0 0 8px #00ff00 inset;
   }
 
-  .sidebar-toggle:hover {
-    background-color: #2a0000;
+  .sidebar-toggle:hover,
+  .sidebar-toggle:focus {
+    background-color: #00ff00;
+    color: #000000;
+    text-shadow: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .sidebar-toggle.is-open {
+    background-color: #1a0000;
+    border-color: #ff0000;
+    color: #ff0000;
+    text-shadow: 0 0 6px #ff0000;
+    box-shadow: 0 0 8px #ff0000 inset;
+  }
+
+  .sidebar-toggle.is-open:hover,
+  .sidebar-toggle.is-open:focus {
+    background-color: #ff0000;
+    color: #000000;
+    text-shadow: none;
+    box-shadow: none;
   }
 
   .sidebar {

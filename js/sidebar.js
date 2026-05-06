@@ -6,6 +6,7 @@
 
   btn.addEventListener('click', function () {
     var isOpen = sidebar.classList.toggle('is-open');
+    btn.classList.toggle('is-open', isOpen);
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     btn.textContent = isOpen
       ? '[ ✕ ЗАКРЫТЬ ]'
