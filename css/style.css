@@ -121,6 +121,7 @@ a:active  { color: #ff0000; }
   max-width: 900px;
   margin: 0 auto;
   position: relative;
+  overflow: visible;
 }
 
 /* ===== SIDEBAR ===== */
@@ -475,6 +476,69 @@ a:active  { color: #ff0000; }
   font-size: 12px;
   font-weight: bold;
   padding: 3px 6px;
+}
+
+/* ===== SIDEBAR TOGGLE BUTTON (mobile only) ===== */
+.sidebar-toggle {
+  display: none;
+}
+
+/* ===== MOBILE / RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .sidebar-toggle {
+    display: block;
+    width: 100%;
+    background-color: #1a0000;
+    border: none;
+    border-top: 2px solid #ff0000;
+    border-bottom: 2px solid #ff0000;
+    color: #ff0000;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 10px;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  .sidebar-toggle:hover {
+    background-color: #2a0000;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #330000;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    /* hidden by default on mobile */
+    display: none;
+  }
+
+  .sidebar.is-open {
+    display: flex;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gb-input,
+  .gb-textarea {
+    width: 100%;
+  }
+
+  .discography-block {
+    flex-direction: column;
+  }
+
+  .album-sidebar {
+    width: 100%;
+  }
 }
 
 /* ===== FOOTER ===== */

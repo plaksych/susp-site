@@ -27,7 +27,7 @@
 /assets/
   /images/
   /gif/
-  /sfx/
+  /audio/
 /css/
 /js/
   script.js   # плеер

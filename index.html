@@ -48,8 +48,13 @@
 
     <!-- ====== SITE WRAPPER ====== -->
     <div class="site-wrapper">
+      <!-- ====== SIDEBAR TOGGLE (mobile) ====== -->
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">
+        [ ★ ИНФО / LINKS / STATUS ]
+      </button>
+
       <!-- ====== SIDEBAR ====== -->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar">
         <button id="play-btn" class="play-btn" onclick="toggleMusic()">
           ▶ PLAY MUSIC
         </button>
@@ -447,5 +452,6 @@
 
     <script src="js/player.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>
