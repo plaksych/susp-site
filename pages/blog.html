@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suspiria - Blog</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='white'>★</text></svg>" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title glow">
+        <span class="blink">★</span> SUSPIRIA <span class="blink">★</span>
+      </h1>
+      <p class="site-subtitle"><i>Alt-METAL // FROM LIPETSK, RUSSIA</i></p>
+      <div class="header-divider">────────────────────────────────────────────────</div>
+    </header>
+
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee-box">
+      <div class="marquee-track">
+        <span>★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR
+          SUMMER 2026 ★ LIPETSK ALT-METAL ★ SUSPIRIA ★
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR
+          SUMMER 2026 ★ LIPETSK ALT-METAL ★ SUSPIRIA ★
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="../index.html" class="nav-button">[ HOME ]</a>
+      <a href="../index.html#members" class="nav-button">[ MEMBERS ]</a>
+      <a href="../index.html#discography" class="nav-button">[ DISCOGRAPHY ]</a>
+      <a href="../index.html#concerts" class="nav-button">[ CONCERTS ]</a>
+      <a href="../index.html#contact" class="nav-button">[ CONTACT ]</a>
+      <a href="blog.html" class="nav-button">[ BLOG ]</a>
+    </nav>
+
+    <div class="site-wrapper">
+      <!-- ====== SIDEBAR TOGGLE (mobile) ====== -->
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">
+        [ ★ ИНФО / LINKS / STATUS ] [НАЖМИ]
+      </button>
+
+      <!-- ====== SIDEBAR ====== -->
+      <aside class="sidebar" id="sidebar">
+        <button id="play-btn" class="play-btn" onclick="toggleMusic()">
+          ▶ PLAY MUSIC
+        </button>
+        <audio id="player" loop>
+          <source src="../assets/audio/suspiria_intro_loop.mp3" type="audio/mpeg" />
+        </audio>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <img src="../assets/gif/emo-taylor-swift.gif" alt="emo taylor swift" class="sidebar-gif" />
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <div class="ad-block">
+          <p class="ad-label">[ РЕКЛАМА ]</p>
+          <p class="ad-text">МЕСТО ДЛЯ<br />ВАШЕЙ РЕКЛАМЫ<br /><span class="neon-green">ЗВОНИ СЕЙЧАС</span></p>
+          <p class="ad-phone">8-800-SUSPIRIA</p>
+        </div>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <div class="ad-block ad-block--broken">
+          <p class="ad-label">[ СПОНСОР ]</p>
+          <p class="ad-text">ТУТ МОГЛА БЫТЬ<br />ВАША ГРУППА</p>
+          <p class="ad-subtext">но вы не позвонили :(</p>
+        </div>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <h3 class="sidebar-heading">STATUS</h3>
+        <ul class="status-list">
+          <li><span class="status-online">●</span> Online</li>
+          <li><span class="status-warn">◘</span> Working on new album</li>
+          <li><span class="status-danger">◙</span> Concerts 2026 coming</li>
+        </ul>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <h3 class="sidebar-heading">LINKS</h3>
+        <ul class="links-list">
+          <li><span class="arrow">▸</span> <a href="https://vk.com/suspiriaband">VKontakte</a></li>
+          <li><span class="arrow">▸</span> <a href="https://t.me/suspiriaband">Telegram</a></li>
+          <li><span class="arrow">▸</span> <a href="https://band.link/JfDzb">Band.Link</a></li>
+          <li><span class="arrow">▸</span> <a href="https://www.youtube.com/watch?v=8czopJri4lU">YouTube</a></li>
+        </ul>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <p class="best-viewed">Best viewed in<br />Internet Explorer 6.0</p>
+      </aside>
+
+      <main class="main-content">
+        <h2 class="section-header">★ BLOG ★</h2>
+
+        <div class="blog-filters">
+          <div class="blog-filter-group">
+            <label class="blog-filter-label">[ АВТОР ]</label>
+            <select id="filter-author" class="blog-filter-select">
+              <option value="">— все —</option>
+            </select>
+          </div>
+          <div class="blog-filter-group">
+            <label class="blog-filter-label">[ С ]</label>
+            <input id="filter-date-from" class="blog-filter-input" type="text" placeholder="дд.мм.гггг" maxlength="10" />
+          </div>
+          <div class="blog-filter-group">
+            <label class="blog-filter-label">[ ПО ]</label>
+            <input id="filter-date-to" class="blog-filter-input" type="text" placeholder="дд.мм.гггг" maxlength="10" />
+          </div>
+          <button id="filter-reset" class="blog-filter-reset">[ ✕ сброс ]</button>
+          <span id="filter-count" class="blog-filter-count"></span>
+        </div>
+
+        <!-- BLOG_POSTS_START -->
+
+
+
+        <article class="blog-post">
+          <div class="blog-post-header">
+            <span class="blog-post-author">&#9733; Максим "Тайлунг"</span>
+            <span class="blog-post-date">07.05.2026</span>
+          </div>
+          <img src="../assets/images/blog/mmrrmrr meeoww.jpg" alt="post image" class="blog-post-image" />
+          <p class="blog-post-text">котик</p>
+        </article>
+        <p class="section-divider">&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;&#9604;&#9600;&#9608;</p>
+
+        <!-- BLOG_POSTS_END -->
+
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p class="footer-divider">▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█</p>
+      <p class="footer-copy">© 2025 <b class="neon-red">SUSPIRIA</b>. All Rights Reserved.</p>
+      <p class="footer-city">LIPETSK, RUSSIA</p>
+      <p class="footer-logo">★ SUSPIRIA ★</p>
+    </footer>
+    <script src="../js/player.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/blog-filter.js"></script>
+  </body>
+</html>
