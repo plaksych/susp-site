@@ -429,6 +429,98 @@ a:active  { color: #ff0000; }
 .event-link:visited { color: #00cc00; }
 .event-link:hover   { color: #ffffff; text-shadow: 0 0 8px #00ff00, 0 0 16px #00ff00; text-decoration: underline; }
 
+/* ===== BLOG FILTERS ===== */
+.blog-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #0a0000;
+  border: 1px solid #330000;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+}
+
+.blog-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.blog-filter-label {
+  color: #ff6600;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.blog-filter-select {
+  background-color: #1a0000;
+  border: 1px solid #ff0000;
+  color: #cccccc;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.blog-filter-select:focus { outline: none; border-color: #ff6600; }
+
+.blog-filter-reset {
+  background-color: #1a0000;
+  border: 1px solid #660000;
+  color: #666666;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.blog-filter-reset:hover { border-color: #ff0000; color: #ff0000; }
+
+.blog-filter-count {
+  color: #444444;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/* ===== BLOG ===== */
+.blog-post {
+  background-color: #0d0000;
+  border-left: 3px solid #ff0000;
+  margin-bottom: 18px;
+  padding: 12px;
+}
+
+.blog-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.blog-post-author { color: #ff6600; font-weight: bold; font-size: 14px; }
+.blog-post-date   { color: #444444; font-size: 12px; font-family: "Courier New", monospace; }
+
+.blog-post-image {
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  border: 2px solid #330000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-post-text {
+  color: #cccccc;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
 /* ===== GUESTBOOK ===== */
 .guestbook-block { background-color: #0d0000; padding: 10px; }
 
