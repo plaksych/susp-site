@@ -16,17 +16,86 @@
       <div class="header-divider">────────────────────────────────────────────────</div>
     </header>
 
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee-box">
+      <div class="marquee-track">
+        <span>★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR
+          SUMMER 2026 ★ LIPETSK ALT-METAL ★ SUSPIRIA ★
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">★ ★ ★ NOW PLAYING: "EP:00(1)" ★ NEW ALBUM IN PROGRESS ★ CONCERT TOUR
+          SUMMER 2026 ★ LIPETSK ALT-METAL ★ SUSPIRIA ★
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
     <nav class="site-nav">
       <a href="../index.html" class="nav-button">[ HOME ]</a>
       <a href="../index.html#members" class="nav-button">[ MEMBERS ]</a>
       <a href="../index.html#discography" class="nav-button">[ DISCOGRAPHY ]</a>
-      <a href="../index.html#tour" class="nav-button">[ TOUR ]</a>
+      <a href="../index.html#concerts" class="nav-button">[ CONCERTS ]</a>
       <a href="../index.html#contact" class="nav-button">[ CONTACT ]</a>
-      <a href="../index.html#guestbook" class="nav-button">[ GUESTBOOK ]</a>
       <a href="blog.html" class="nav-button">[ BLOG ]</a>
     </nav>
 
     <div class="site-wrapper">
+      <!-- ====== SIDEBAR TOGGLE (mobile) ====== -->
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">
+        [ ★ ИНФО / LINKS / STATUS ] [НАЖМИ]
+      </button>
+
+      <!-- ====== SIDEBAR ====== -->
+      <aside class="sidebar" id="sidebar">
+        <button id="play-btn" class="play-btn" onclick="toggleMusic()">
+          ▶ PLAY MUSIC
+        </button>
+        <audio id="player" loop>
+          <source src="../assets/audio/suspiria_intro_loop.mp3" type="audio/mpeg" />
+        </audio>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <img src="../assets/gif/emo-taylor-swift.gif" alt="emo taylor swift" class="sidebar-gif" />
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <div class="ad-block">
+          <p class="ad-label">[ РЕКЛАМА ]</p>
+          <p class="ad-text">МЕСТО ДЛЯ<br />ВАШЕЙ РЕКЛАМЫ<br /><span class="neon-green">ЗВОНИ СЕЙЧАС</span></p>
+          <p class="ad-phone">8-800-SUSPIRIA</p>
+        </div>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <div class="ad-block ad-block--broken">
+          <p class="ad-label">[ СПОНСОР ]</p>
+          <p class="ad-text">ТУТ МОГЛА БЫТЬ<br />ВАША ГРУППА</p>
+          <p class="ad-subtext">но вы не позвонили :(</p>
+        </div>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <h3 class="sidebar-heading">STATUS</h3>
+        <ul class="status-list">
+          <li><span class="status-online">●</span> Online</li>
+          <li><span class="status-warn">◘</span> Working on new album</li>
+          <li><span class="status-danger">◙</span> Concerts 2026 coming</li>
+        </ul>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <h3 class="sidebar-heading">LINKS</h3>
+        <ul class="links-list">
+          <li><span class="arrow">▸</span> <a href="https://vk.com/suspiriaband">VKontakte</a></li>
+          <li><span class="arrow">▸</span> <a href="https://t.me/suspiriaband">Telegram</a></li>
+          <li><span class="arrow">▸</span> <a href="https://band.link/JfDzb">Band.Link</a></li>
+          <li><span class="arrow">▸</span> <a href="https://www.youtube.com/watch?v=8czopJri4lU">YouTube</a></li>
+        </ul>
+
+        <span class="sidebar-divider">═════════════</span>
+
+        <p class="best-viewed">Best viewed in<br />Internet Explorer 6.0</p>
+      </aside>
+
       <main class="main-content">
         <h2 class="section-header">★ BLOG ★</h2>
 
@@ -74,6 +143,8 @@
       <p class="footer-city">LIPETSK, RUSSIA</p>
       <p class="footer-logo">★ SUSPIRIA ★</p>
     </footer>
+    <script src="../js/player.js"></script>
+    <script src="../js/sidebar.js"></script>
     <script src="../js/blog-filter.js"></script>
   </body>
 </html>
