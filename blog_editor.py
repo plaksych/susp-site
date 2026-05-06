@@ -69,6 +69,20 @@ def load_posts():
     return [(m.group(1).strip(), m.group(2).strip()) for m in pat.finditer(html)]
 
 
+def delete_post(index):
+    html = read_html()
+    # каждый пост = <article ...> ... </article>\n + divider\n
+    pat = re.compile(
+        r'        <article class="blog-post">.*?</article>\n'
+        r'        <p class="section-divider">.*?</p>\n',
+        re.DOTALL)
+    matches = list(pat.finditer(html))
+    if index < 0 or index >= len(matches):
+        raise IndexError("Пост не найден")
+    m = matches[index]
+    write_html(html[:m.start()] + html[m.end():])
+
+
 # ── GUI ────────────────────────────────────────────────────────────────────
 
 class BlogEditor(tk.Tk):
@@ -165,7 +179,15 @@ class BlogEditor(tk.Tk):
         self.post_list.config(yscrollcommand=sb.set)
 
         tk.Label(self, bg=self.BG, fg=self.DARK, font=("Verdana", 8),
-                 text="посты добавляются сверху в pages/blog.html").pack(pady=(0, 6))
+                 text="посты добавляются сверху в pages/blog.html").pack(pady=(0, 4))
+
+        # Удалить пост
+        tk.Button(self, text="[ ✕ УДАЛИТЬ ВЫБРАННЫЙ ПОСТ ]",
+                  bg=self.BG2, fg=self.RED,
+                  activebackground=self.RED, activeforeground="#000",
+                  relief="flat", font=("Courier New", 10, "bold"),
+                  cursor="hand2", pady=5,
+                  command=self._delete_post).pack(fill="x", padx=18, pady=(0, 6))
 
         # Git push
         tk.Button(self, text="[ ↑ GIT PUSH ]",
@@ -205,6 +227,21 @@ class BlogEditor(tk.Tk):
         messagebox.showinfo("Готово", "Пост опубликован в blog.html!")
         self.text_box.delete("1.0", "end")
         self._clear_image()
+        self._refresh_list()
+
+    def _delete_post(self):
+        sel = self.post_list.curselection()
+        if not sel:
+            messagebox.showwarning("Удаление", "Сначала выбери пост из списка."); return
+        idx = sel[0]
+        entry = self.post_list.get(idx).strip()
+        if not messagebox.askyesno("Удаление", "Удалить пост?\n\n" + entry):
+            return
+        try:
+            delete_post(idx)
+        except Exception as e:
+            messagebox.showerror("Ошибка", str(e)); return
+        messagebox.showinfo("Готово", "Пост удалён.")
         self._refresh_list()
 
     def _git_push(self):
