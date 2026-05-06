@@ -10,6 +10,14 @@
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     btn.textContent = isOpen
       ? '[ ✕ ЗАКРЫТЬ ]'
-      : '[ ★ ИНФО / LINKS / STATUS ]';
+      : '[ ★ ИНФО / LINKS / STATUS ] [НАЖМИ]';
+    btn.blur();
+
+    if (!isOpen) {
+      /* перезапускаем анимацию: снимаем, форсируем reflow, возвращаем */
+      btn.style.animation = 'none';
+      void btn.offsetWidth;
+      btn.style.animation = '';
+    }
   });
 })();
