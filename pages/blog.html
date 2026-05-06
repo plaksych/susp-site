@@ -38,10 +38,12 @@
             </select>
           </div>
           <div class="blog-filter-group">
-            <label class="blog-filter-label">[ ДАТА ]</label>
-            <select id="filter-date" class="blog-filter-select">
-              <option value="">— все —</option>
-            </select>
+            <label class="blog-filter-label">[ С ]</label>
+            <input id="filter-date-from" class="blog-filter-input" type="text" placeholder="дд.мм.гггг" maxlength="10" />
+          </div>
+          <div class="blog-filter-group">
+            <label class="blog-filter-label">[ ПО ]</label>
+            <input id="filter-date-to" class="blog-filter-input" type="text" placeholder="дд.мм.гггг" maxlength="10" />
           </div>
           <button id="filter-reset" class="blog-filter-reset">[ ✕ сброс ]</button>
           <span id="filter-count" class="blog-filter-count"></span>
