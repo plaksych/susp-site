@@ -206,7 +206,7 @@ a:active  { color: #ff0000; }
 }
 
 /* ===== AD BLOCKS ===== */
-.promo-block {
+.ad-block {
   border: 1px dashed #333300;
   background-color: #0a0a00;
   padding: 8px 6px;
@@ -214,21 +214,21 @@ a:active  { color: #ff0000; }
   text-align: center;
 }
 
-.promo-block--broken {
+.ad-block--broken {
   border-style: dotted;
   border-color: #003300;
   background-color: #000a00;
   opacity: 0.85;
 }
 
-.promo-label {
+.ad-label {
   color: #555500;
   font-size: 13px;
   margin-bottom: 4px;
   letter-spacing: 2px;
 }
 
-.promo-text {
+.ad-text {
   color: #999900;
   font-size: 13px;
   font-weight: bold;
@@ -236,13 +236,13 @@ a:active  { color: #ff0000; }
   margin-bottom: 4px;
 }
 
-.promo-phone {
+.ad-phone {
   color: #00ff00;
   font-family: "Courier New", monospace;
   font-size: 12px;
 }
 
-.promo-subtext {
+.ad-subtext {
   color: #444444;
   font-size: 12px;
   font-style: italic;
